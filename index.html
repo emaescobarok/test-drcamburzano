@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="es">
+<head>
+  <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="manifest" href="images/site.webmanifest" />
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="theme-color" content="#002147">
+
+  <title>Dr. Carlos A. Camburzano | Especialista en Cadera y Rodilla</title>
+  <meta name="description" content="Dr. Carlos A. Camburzano. Especialista en Ortopedia y Traumatología con foco en patologías de cadera y rodilla, reemplazos articulares y cirugía asistida por navegación OrthAlign y realidad aumentada NextAR. Atención en Sanatorio Americano y COT, Rosario.">
+
+  <!-- Redes sociales / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="Dr. Carlos A. Camburzano">
+  <meta property="og:title" content="Dr. Carlos A. Camburzano | Especialista en Cadera y Rodilla">
+  <meta property="og:description" content="Más de 18 años de experiencia en Ortopedia y Traumatología. Cadera y rodilla, reemplazos articulares y cirugía asistida por navegación. Rosario.">
+  <meta property="og:image" content="images/drcamburzano.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dr. Carlos A. Camburzano | Especialista en Cadera y Rodilla">
+  <meta name="twitter:description" content="Más de 18 años de experiencia en Ortopedia y Traumatología. Cadera y rodilla, reemplazos articulares y cirugía asistida por navegación. Rosario.">
+  <meta name="twitter:image" content="images/drcamburzano.jpg">
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-tertiary-fixed": "#002106",
+            "surface-variant": "#e1e3e4",
+            "on-secondary-fixed": "#002106",
+            "tertiary-fixed": "#83fc8e",
+            "on-primary-fixed": "#001b3d",
+            "outline-variant": "#c4c6cf",
+            "primary-container": "#002147",
+            "outline": "#74777f",
+            "inverse-surface": "#2e3132",
+            "on-error-container": "#93000a",
+            "surface-tint": "#465f88",
+            "on-primary-fixed-variant": "#2d476f",
+            "surface-container": "#edeeef",
+            "on-error": "#ffffff",
+            "error": "#ba1a1a",
+            "inverse-primary": "#aec7f6",
+            "inverse-on-surface": "#f0f1f2",
+            "on-secondary-container": "#00591e",
+            "surface-bright": "#f8f9fa",
+            "surface": "#f8f9fa",
+            "surface-container-highest": "#e1e3e4",
+            "on-surface": "#191c1d",
+            "on-tertiary-fixed-variant": "#00531a",
+            "primary": "#000a1e",
+            "on-surface-variant": "#44474e",
+            "secondary-fixed-dim": "#66df75",
+            "on-primary-container": "#a8c0e4",
+            "tertiary-fixed-dim": "#66df75",
+            "error-container": "#ffdad6",
+            "primary-fixed-dim": "#aec7f6",
+            "surface-container-high": "#e7e8e9",
+            "on-secondary-fixed-variant": "#00531a",
+            "surface-container-low": "#f3f4f5",
+            "secondary": "#006e25",
+            "on-background": "#191c1d",
+            "surface-dim": "#d9dadb",
+            "secondary-container": "#80f98b",
+            "primary-fixed": "#d6e3ff",
+            "tertiary": "#000e02",
+            "on-tertiary-container": "#199d3d",
+            "on-secondary": "#ffffff",
+            "tertiary-container": "#002808",
+            "on-tertiary": "#ffffff",
+            "background": "#f8f9fa",
+            "surface-container-lowest": "#ffffff",
+            "on-primary": "#ffffff",
+            "secondary-fixed": "#83fc8e",
+            "neutral-trayectoria": "#F5F7FA"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Inter"],
+            "label": ["Inter"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+
+    /* Escala tipográfica fluida: evita el desborde de "Camburzano" en tablet y
+       en la columna angosta del hero en desktop. */
+    .h1-fluid {
+      font-size: clamp(2.5rem, 1.4rem + 4.6vw, 4.5rem);
+      letter-spacing: -0.03em;
+      text-wrap: balance;
+    }
+
+    h2, h3 {
+      text-wrap: balance;
+    }
+
+    .prose-narrativa p {
+      text-wrap: pretty;
+    }
+
+    .nav-link {
+      transition: color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .nav-link.active {
+      color: #002147;
+      font-weight: 700;
+      border-bottom: 2px solid #002147;
+    }
+
+    /* Foco visible y consistente para navegación por teclado. */
+    :where(a, button):focus-visible {
+      outline: 3px solid #002147;
+      outline-offset: 3px;
+      border-radius: 0.5rem;
+    }
+
+    .on-dark :where(a, button):focus-visible {
+      outline-color: #83fc8e;
+    }
+
+    /* Reveal progresivo: el contenido es visible por defecto y sólo se oculta
+       cuando el JS confirma soporte y que el usuario no pidió menos movimiento. */
+    .js-motion [data-reveal] {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+
+    .js-motion [data-reveal].is-in {
+      opacity: 1;
+      transform: none;
+      transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms),
+                  transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+
+      .js-motion [data-reveal],
+      .js-motion [data-reveal].is-in {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Dr. Carlos A. Camburzano",
+    "medicalSpecialty": "Orthopedic",
+    "description": "Especialista en Ortopedia y Traumatología con foco en patologías de cadera y rodilla, reemplazos articulares y cirugía asistida por navegación quirúrgica OrthAlign y realidad aumentada NextAR.",
+    "image": "images/drcamburzano.jpg",
+    "sameAs": ["https://www.instagram.com/dr.camburzano/"],
+    "areaServed": "Rosario, Santa Fe, Argentina",
+    "location": [
+      {
+        "@type": "MedicalClinic",
+        "name": "Sanatorio Americano",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Rosario",
+          "addressRegion": "Santa Fe",
+          "addressCountry": "AR"
+        },
+        "openingHoursSpecification": [
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "17:00", "closes": "20:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "12:00", "closes": "17:00" }
+        ]
+      },
+      {
+        "@type": "MedicalClinic",
+        "name": "Centro de Ortopedia y Traumatología (COT)",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Rosario",
+          "addressRegion": "Santa Fe",
+          "addressCountry": "AR"
+        },
+        "openingHoursSpecification": [
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "08:00", "closes": "12:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Tuesday", "opens": "14:30", "closes": "17:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Thursday", "opens": "08:00", "closes": "12:00" }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container">
+  <a href="#contenido"
+     class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[60] focus:bg-primary-container focus:text-white focus:px-5 focus:py-3 focus:rounded-full focus:font-bold">
+    Saltar al contenido
+  </a>
+
+  <header class="fixed top-0 w-full z-40 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100">
+    <nav class="flex justify-between items-center gap-4 px-6 py-4 max-w-7xl mx-auto" aria-label="Navegación principal">
+      <a href="#home" class="text-base sm:text-xl font-bold text-primary-container font-headline tracking-tight">Dr. Carlos A. Camburzano</a>
+
+      <div class="hidden md:flex items-center gap-8">
+        <a class="nav-link text-slate-600 hover:text-primary-container pb-1 active" href="#home">Inicio</a>
+        <a class="nav-link text-slate-600 hover:text-primary-container pb-1" href="#especialidad">Especialidad</a>
+        <a class="nav-link text-slate-600 hover:text-primary-container pb-1" href="#trayectoria">Trayectoria</a>
+        <a class="nav-link text-slate-600 hover:text-primary-container pb-1" href="#contacto">Contacto</a>
+        <a class="bg-primary-container text-white px-6 py-3 rounded-full font-bold hover:opacity-90 transition-opacity duration-300 active:scale-95 shadow-md flex items-center gap-2" href="#contacto">
+          <span class="material-symbols-outlined text-base" aria-hidden="true">calendar_today</span>
+          Solicitar turno
+        </a>
+      </div>
+
+      <button id="mobile-menu-button" type="button"
+              class="md:hidden flex items-center justify-center -mr-2 p-2 text-primary-container"
+              aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu-overlay">
+        <span class="material-symbols-outlined text-3xl" aria-hidden="true">menu</span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- MOBILE MENU OVERLAY -->
+  <div id="mobile-menu-overlay" class="fixed inset-0 z-50 bg-white text-black hidden md:hidden overflow-y-auto"
+       role="dialog" aria-modal="true" aria-label="Menú de navegación">
+    <div class="flex items-center justify-between gap-4 px-6 py-6 border-b border-slate-200">
+      <div class="text-lg font-bold text-primary-container font-headline">
+        Dr. Carlos A. Camburzano
+      </div>
+
+      <button id="mobile-menu-close" type="button"
+              class="flex items-center justify-center -mr-2 p-2 text-primary-container" aria-label="Cerrar menú">
+        <span class="material-symbols-outlined text-3xl" aria-hidden="true">close</span>
+      </button>
+    </div>
+
+    <nav class="flex flex-col pt-4" aria-label="Navegación móvil">
+      <a href="#home" class="px-6 py-5 border-b border-slate-200 text-lg font-semibold text-black">Inicio</a>
+      <a href="#especialidad" class="px-6 py-5 border-b border-slate-200 text-lg font-semibold text-black">Especialidad</a>
+      <a href="#trayectoria" class="px-6 py-5 border-b border-slate-200 text-lg font-semibold text-black">Trayectoria</a>
+      <a href="#contacto" class="px-6 py-5 border-b border-slate-200 text-lg font-semibold text-black">Contacto</a>
+    </nav>
+
+    <div class="px-6 py-8">
+      <a href="#contacto"
+         class="bg-primary-container text-white px-6 py-4 rounded-full font-bold flex items-center justify-center gap-2 w-full">
+        <span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>
+        Solicitar turno
+      </a>
+    </div>
+  </div>
+
+  <main id="contenido">
+    <section class="pt-32 pb-20 px-6 bg-surface scroll-mt-24" id="home">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="space-y-8">
+          <div class="space-y-3">
+            <p class="font-label uppercase tracking-wider text-xs text-on-secondary-container font-semibold">Ortopedia y Traumatología</p>
+            <h1 class="font-headline h1-fluid font-extrabold text-primary leading-[1.05]">Dr. Carlos A. Camburzano</h1>
+            <p class="font-headline text-2xl md:text-3xl text-on-primary-fixed-variant font-semibold">Especialista en Cadera y Rodilla</p>
+          </div>
+
+          <p class="text-lg text-on-surface-variant max-w-[60ch] leading-relaxed">
+            Más de 18 años de experiencia en Ortopedia y Traumatología, con especialización en patologías de cadera y rodilla, reemplazos articulares y técnicas quirúrgicas asistidas por navegación y realidad aumentada.
+          </p>
+
+          <ul class="space-y-4 max-w-[58ch]">
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-secondary shrink-0" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">check_circle</span>
+              <span class="font-medium">Especialista en Ortopedia y Traumatología desde 2008</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-secondary shrink-0" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">check_circle</span>
+              <span class="font-medium">Más de 18 años de práctica traumatológica y quirúrgica</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-secondary shrink-0" style="font-variation-settings: 'FILL' 1;" aria-hidden="true">check_circle</span>
+              <span class="font-medium">Experiencia en navegación quirúrgica OrthAlign y realidad aumentada NextAR</span>
+            </li>
+          </ul>
+
+          <!-- IMAGEN SOLO MOBILE (misma fuente que la de desktop: el navegador reutiliza la descarga) -->
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl group lg:hidden bg-slate-200">
+            <picture>
+              <source srcset="images/drcamburzano.webp" type="image/webp">
+              <img alt="Retrato del Dr. Carlos A. Camburzano con ambo blanco del Centro de Ortopedia y Traumatología"
+                   class="object-cover w-full h-full aspect-[4/5] transition-transform duration-700 group-hover:scale-105"
+                   src="images/drcamburzano.jpg" width="819" height="1024" fetchpriority="high" decoding="async">
+            </picture>
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" aria-hidden="true"></div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4 pt-2">
+            <a class="bg-primary-container text-on-primary px-8 py-4 rounded-full font-bold text-center hover:opacity-90 transition-opacity shadow-lg flex items-center justify-center gap-2"
+              href="#contacto">
+              <span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>
+              Solicitar turno
+            </a>
+          </div>
+        </div>
+
+        <!-- IMAGEN SOLO DESKTOP -->
+        <div class="relative rounded-3xl overflow-hidden shadow-2xl group bg-slate-200 hidden lg:block">
+          <picture>
+            <source srcset="images/drcamburzano.webp" type="image/webp">
+            <img alt="Retrato del Dr. Carlos A. Camburzano con ambo blanco del Centro de Ortopedia y Traumatología"
+                 class="object-cover w-full h-full aspect-[4/5] transition-transform duration-700 group-hover:scale-105"
+                 src="images/drcamburzano.jpg" width="819" height="1024" fetchpriority="high" decoding="async">
+          </picture>
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 md:py-24 bg-surface-container-low scroll-mt-24" id="especialidad" aria-labelledby="especialidad-titulo">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-12 mb-20 md:mb-24 items-center" data-reveal>
+          <div class="lg:col-span-2 space-y-6">
+            <h2 id="especialidad-titulo" class="font-headline text-3xl md:text-4xl font-bold text-primary">Recuperar el movimiento empieza por un diagnóstico preciso</h2>
+            <p class="text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-[62ch]">
+              El dolor de cadera o rodilla puede afectar actividades cotidianas, la práctica deportiva y la calidad de vida. Una evaluación adecuada permite identificar su origen y definir el tratamiento más conveniente para cada paciente.
+            </p>
+          </div>
+
+          <ul class="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+            <li class="flex sm:flex-col items-center gap-3 sm:gap-0 p-4 bg-surface-container-lowest rounded-2xl sm:text-center">
+              <span class="material-symbols-outlined text-3xl sm:text-4xl text-error sm:mb-2 shrink-0" aria-hidden="true">directions_walk</span>
+              <span class="text-sm sm:text-xs font-bold uppercase leading-tight">Dolor de cadera y rodilla</span>
+            </li>
+            <li class="flex sm:flex-col items-center gap-3 sm:gap-0 p-4 bg-surface-container-lowest rounded-2xl sm:text-center">
+              <span class="material-symbols-outlined text-3xl sm:text-4xl text-error sm:mb-2 shrink-0" aria-hidden="true">sports_soccer</span>
+              <span class="text-sm sm:text-xs font-bold uppercase leading-tight">Lesiones deportivas</span>
+            </li>
+            <li class="flex sm:flex-col items-center gap-3 sm:gap-0 p-4 bg-surface-container-lowest rounded-2xl sm:text-center">
+              <span class="material-symbols-outlined text-3xl sm:text-4xl text-error sm:mb-2 shrink-0" aria-hidden="true">orthopedics</span>
+              <span class="text-sm sm:text-xs font-bold uppercase leading-tight">Desgaste articular</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="grid gap-6 md:gap-8 mb-20 md:mb-24" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+          <div class="bg-surface-container-lowest p-8 md:p-10 rounded-3xl border border-outline-variant/20 hover:shadow-xl transition-shadow group" data-reveal style="--reveal-delay:0ms">
+            <div class="w-14 h-14 bg-primary-fixed rounded-2xl flex items-center justify-center mb-6 text-primary-container group-hover:bg-primary-container group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-3xl" aria-hidden="true">biotech</span>
+            </div>
+            <h3 class="font-headline text-xl font-bold mb-4">Diagnóstico preciso</h3>
+            <p class="text-on-surface-variant leading-relaxed">Evaluación clínica integral para identificar el origen del dolor, las limitaciones funcionales y las necesidades particulares de cada paciente.</p>
+          </div>
+
+          <div class="bg-surface-container-lowest p-8 md:p-10 rounded-3xl border border-outline-variant/20 hover:shadow-xl transition-shadow group" data-reveal style="--reveal-delay:90ms">
+            <div class="w-14 h-14 bg-primary-fixed rounded-2xl flex items-center justify-center mb-6 text-primary-container group-hover:bg-primary-container group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-3xl" aria-hidden="true">healing</span>
+            </div>
+            <h3 class="font-headline text-xl font-bold mb-4">Tratamiento personalizado</h3>
+            <p class="text-on-surface-variant leading-relaxed">Alternativas conservadoras y quirúrgicas definidas según la edad, el nivel de actividad y las características de cada caso.</p>
+          </div>
+
+          <div class="bg-surface-container-lowest p-8 md:p-10 rounded-3xl border border-outline-variant/20 hover:shadow-xl transition-shadow group" data-reveal style="--reveal-delay:180ms">
+            <div class="w-14 h-14 bg-primary-fixed rounded-2xl flex items-center justify-center mb-6 text-primary-container group-hover:bg-primary-container group-hover:text-white transition-colors">
+              <span class="material-symbols-outlined text-3xl" aria-hidden="true">surgical</span>
+            </div>
+            <h3 class="font-headline text-xl font-bold mb-4">Cirugía especializada</h3>
+            <p class="text-on-surface-variant leading-relaxed">Experiencia en cirugía de cadera y rodilla, reemplazos articulares y procedimientos asistidos por tecnologías de navegación y realidad aumentada.</p>
+          </div>
+        </div>
+
+        <div class="on-dark bg-primary-container rounded-3xl md:rounded-[3rem] p-8 sm:p-10 md:p-12 text-white" data-reveal>
+          <h3 class="font-headline text-2xl md:text-3xl font-bold mb-10 text-center">Áreas de atención</h3>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <li class="space-y-3">
+              <span class="text-secondary-fixed-dim font-bold text-4xl font-headline" aria-hidden="true">01</span>
+              <h4 class="font-bold text-lg">Patología deportiva de cadera y rodilla</h4>
+              <p class="text-on-primary-container text-sm leading-relaxed">Evaluación y tratamiento de lesiones y patologías vinculadas a la actividad física y deportiva.</p>
+            </li>
+            <li class="space-y-3">
+              <span class="text-secondary-fixed-dim font-bold text-4xl font-headline" aria-hidden="true">02</span>
+              <h4 class="font-bold text-lg">Reemplazos articulares de cadera y rodilla</h4>
+              <p class="text-on-primary-container text-sm leading-relaxed">Tratamiento quirúrgico mediante artroplastia de cadera y rodilla, incorporando sistemas actuales de navegación y asistencia intraoperatoria cuando el caso lo requiere.</p>
+            </li>
+            <li class="space-y-3">
+              <span class="text-secondary-fixed-dim font-bold text-4xl font-headline" aria-hidden="true">03</span>
+              <h4 class="font-bold text-lg">Corrección de deformidades en pacientes jóvenes</h4>
+              <p class="text-on-primary-container text-sm leading-relaxed">Evaluación y tratamiento de alteraciones del eje de los miembros inferiores mediante procedimientos orientados a corregir deformidades y preservar la articulación.</p>
+            </li>
+            <li class="space-y-3">
+              <span class="text-secondary-fixed-dim font-bold text-4xl font-headline" aria-hidden="true">04</span>
+              <h4 class="font-bold text-lg">Tratamiento conservador en adultos mayores</h4>
+              <p class="text-on-primary-container text-sm leading-relaxed">Abordaje de patologías traumatológicas y degenerativas mediante alternativas no quirúrgicas cuando están indicadas, buscando preservar la movilidad y calidad de vida.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 md:py-24 bg-white scroll-mt-24" id="trayectoria" aria-labelledby="trayectoria-titulo">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="max-w-3xl mx-auto mb-16 md:mb-20" data-reveal>
+          <p class="inline-block px-4 py-2 bg-primary-fixed rounded-lg text-primary text-xs font-bold uppercase tracking-widest mb-6">Trayectoria profesional</p>
+          <h2 id="trayectoria-titulo" class="font-headline text-3xl md:text-4xl font-extrabold text-primary mb-8">Más de 18 años dedicados a la Ortopedia y Traumatología</h2>
+
+          <div class="prose-narrativa text-on-surface-variant text-lg leading-relaxed space-y-5">
+            <p class="text-xl text-primary/90 font-medium">Médico egresado de la Universidad Nacional de Rosario y especialista en Ortopedia y Traumatología desde 2008, certificado por el Colegio de Médicos de Rosario.</p>
+            <p>A lo largo de su trayectoria desarrolló actividad asistencial y formación continua en diferentes centros médicos de la región, incluyendo el Sistema Integrado de Emergencias Sanitarias de Rosario (SIES) y PAMI II, donde se desempeñó como médico traumatólogo de staff durante 15 años.</p>
+            <p>Actualmente desarrolla su actividad médica en el Centro de Ortopedia y Traumatología (COT) y forma parte del staff del Sanatorio Americano de Rosario desde 2011.</p>
+            <p>Participa además en actividades académicas y de formación dentro de la Asociación Rosarina de Ortopedia y Traumatología (AROT), formando parte de su actual Comisión Directiva.</p>
+            <p>Su práctica se concentra especialmente en cirugía de miembro inferior, cadera y rodilla, realizando procedimientos en diferentes centros de referencia de Rosario e incorporando tecnologías aplicadas a la cirugía, como navegación OrthAlign y realidad aumentada NextAR.</p>
+          </div>
+        </div>
+
+        <dl class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto mb-12" data-reveal>
+          <div class="bg-neutral-trayectoria p-6 md:p-8 rounded-3xl flex flex-col items-center justify-start text-center border border-slate-100">
+            <dd class="font-headline font-extrabold text-primary-container leading-none mb-4 text-5xl md:text-6xl">18+</dd>
+            <dt class="text-xs md:text-sm font-bold text-slate-600 uppercase tracking-[0.15em] leading-snug">Años de experiencia</dt>
+          </div>
+
+          <div class="bg-neutral-trayectoria p-6 md:p-8 rounded-3xl flex flex-col items-center justify-start text-center border border-slate-100">
+            <dd class="font-headline font-extrabold text-primary-container leading-none mb-4 text-5xl md:text-6xl">2008</dd>
+            <dt class="text-xs md:text-sm font-bold text-slate-600 uppercase tracking-[0.15em] leading-snug">Especialista en Ortopedia y Traumatología</dt>
+          </div>
+
+          <div class="bg-neutral-trayectoria p-6 md:p-8 rounded-3xl flex flex-col items-center justify-start text-center border border-slate-100">
+            <dd class="font-headline font-extrabold text-primary-container leading-none mb-4 text-5xl md:text-6xl">15</dd>
+            <dt class="text-xs md:text-sm font-bold text-slate-600 uppercase tracking-[0.15em] leading-snug">Años como traumatólogo de staff en PAMI II</dt>
+          </div>
+
+          <div class="bg-neutral-trayectoria p-6 md:p-8 rounded-3xl flex flex-col items-center justify-start text-center border border-slate-100">
+            <dd class="font-headline font-extrabold text-primary-container leading-none mb-4 text-5xl md:text-6xl">AROT</dd>
+            <dt class="text-xs md:text-sm font-bold text-slate-600 uppercase tracking-[0.15em] leading-snug">Miembro de Comisión Directiva</dt>
+          </div>
+        </dl>
+
+        <div class="max-w-5xl mx-auto bg-surface-container-low rounded-3xl p-6 sm:p-8 md:p-10 border border-slate-200/70" data-reveal>
+          <h3 class="font-headline text-2xl font-bold text-primary mb-6">Puntos destacados de su trayectoria</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-3 text-on-surface-variant leading-relaxed">
+            <ul class="space-y-3 list-disc pl-5 marker:text-secondary">
+              <li>Médico egresado de la Universidad Nacional de Rosario.</li>
+              <li>Especialista en Ortopedia y Traumatología desde 2008.</li>
+              <li>Certificado por el Colegio de Médicos de Rosario.</li>
+              <li>Experiencia profesional en el Sistema Integrado de Emergencias Sanitarias de Rosario (SIES).</li>
+              <li>Médico traumatólogo de staff de PAMI II durante 15 años.</li>
+            </ul>
+            <ul class="space-y-3 list-disc pl-5 marker:text-secondary">
+              <li>Staff del Sanatorio Americano de Rosario desde 2011.</li>
+              <li>Actividad médica actual en el Centro de Ortopedia y Traumatología (COT).</li>
+              <li>Participación en la Comisión Directiva de la Asociación Rosarina de Ortopedia y Traumatología (AROT).</li>
+              <li>Formación continua mediante cursos, rotaciones y actividades de perfeccionamiento en Argentina y el exterior.</li>
+              <li>Experiencia en cirugía de cadera y rodilla asistida por navegación quirúrgica OrthAlign y realidad aumentada NextAR.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 md:py-24 bg-surface scroll-mt-24" id="contacto" aria-labelledby="contacto-titulo">
+      <div class="max-w-5xl mx-auto px-6">
+        <div class="bg-white p-6 sm:p-10 md:p-16 rounded-3xl md:rounded-[3rem] shadow-xl border border-slate-100" data-reveal>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 lg:divide-x lg:divide-slate-200">
+            <div class="space-y-8">
+              <div class="space-y-4">
+                <span class="material-symbols-outlined text-5xl text-secondary" aria-hidden="true">calendar_today</span>
+                <h2 id="contacto-titulo" class="font-headline text-3xl md:text-4xl font-extrabold text-primary">Agenda tu consulta</h2>
+                <p class="text-lg text-on-surface-variant leading-relaxed">Atención especializada en Rosario para patologías de cadera y rodilla, lesiones deportivas, reemplazos articulares y tratamiento traumatológico del adulto.</p>
+              </div>
+
+              <div class="space-y-6">
+                <div>
+                  <h3 class="flex items-center gap-2 font-headline font-bold text-primary mb-3">
+                    <span class="material-symbols-outlined text-primary-container text-xl" aria-hidden="true">location_on</span>
+                    Sanatorio Americano
+                  </h3>
+                  <dl class="text-on-surface-variant space-y-1.5 pl-7">
+                    <div class="flex justify-between gap-4 max-w-xs border-b border-slate-100 pb-1.5">
+                      <dt>Miércoles</dt><dd class="font-medium text-primary">17:00 a 20:00 hs</dd>
+                    </div>
+                    <div class="flex justify-between gap-4 max-w-xs border-b border-slate-100 pb-1.5">
+                      <dt>Viernes</dt><dd class="font-medium text-primary">12:00 a 17:00 hs</dd>
+                    </div>
+                  </dl>
+                </div>
+
+                <div>
+                  <h3 class="flex items-center gap-2 font-headline font-bold text-primary mb-3">
+                    <span class="material-symbols-outlined text-primary-container text-xl" aria-hidden="true">location_on</span>
+                    Centro de Ortopedia y Traumatología (COT)
+                  </h3>
+                  <dl class="text-on-surface-variant space-y-1.5 pl-7">
+                    <div class="flex justify-between gap-4 max-w-xs border-b border-slate-100 pb-1.5">
+                      <dt>Lunes</dt><dd class="font-medium text-primary">08:00 a 12:00 hs</dd>
+                    </div>
+                    <div class="flex justify-between gap-4 max-w-xs border-b border-slate-100 pb-1.5">
+                      <dt>Martes</dt><dd class="font-medium text-primary">14:30 a 17:00 hs</dd>
+                    </div>
+                    <div class="flex justify-between gap-4 max-w-xs border-b border-slate-100 pb-1.5">
+                      <dt>Jueves</dt><dd class="font-medium text-primary">08:00 a 12:00 hs</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-6 lg:pl-14 lg:flex lg:flex-col lg:justify-center">
+              <h3 class="font-headline text-2xl font-bold text-primary">Gestión de turnos</h3>
+              <p class="text-on-surface-variant leading-relaxed">Solicitá tu turno de forma simple y rápida.</p>
+
+              <!-- REVISAR: esta URL del Sanatorio Americano corresponde al perfil de
+                   "bosch-cecilia-natalia", no al del Dr. Camburzano. Reemplazar por el slug correcto. -->
+              <a class="bg-primary-container text-white px-8 py-4 rounded-full font-bold text-center flex items-center justify-center gap-2 hover:opacity-90 transition-opacity shadow-lg"
+                href="https://www.sanatorio-americano.com.ar/profesionales/bosch-cecilia-natalia/"
+                target="_blank" rel="noopener">
+                <span class="material-symbols-outlined" aria-hidden="true">calendar_today</span>
+                Solicitar turno ahora
+                <span class="sr-only">(se abre en una pestaña nueva)</span>
+              </a>
+
+              <dl class="pt-2 text-sm text-on-surface-variant space-y-3 border-t border-slate-200">
+                <div class="flex gap-2 pt-3">
+                  <dt class="font-semibold text-primary">Ciudad:</dt><dd>Rosario, Santa Fe</dd>
+                </div>
+                <div class="flex gap-2">
+                  <dt class="font-semibold text-primary">Especialidad:</dt><dd>Ortopedia y Traumatología</dd>
+                </div>
+                <div class="flex gap-2">
+                  <dt class="font-semibold text-primary">Foco:</dt><dd>Cadera y rodilla</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="on-dark bg-primary-container text-white pt-16 md:pt-20 pb-10">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 pb-12 md:pb-16 border-b border-white/10">
+        <div class="space-y-5">
+          <p class="font-headline font-extrabold text-2xl tracking-tight">Dr. Carlos A. Camburzano</p>
+          <p class="text-on-primary-container text-base leading-relaxed max-w-xs">
+            Especialista en Ortopedia y Traumatología con foco en patologías de cadera y rodilla, reemplazos articulares y cirugía asistida por tecnologías de navegación.
+          </p>
+        </div>
+
+        <div class="space-y-5">
+          <h2 class="font-headline font-bold text-sm uppercase tracking-widest text-secondary-fixed-dim">Lugares de atención</h2>
+          <ul class="space-y-4 text-on-primary-container">
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-xl mt-0.5 shrink-0" aria-hidden="true">location_on</span>
+              <span>Sanatorio Americano<br>Rosario, Santa Fe</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-xl mt-0.5 shrink-0" aria-hidden="true">location_on</span>
+              <span>Centro de Ortopedia y Traumatología (COT)<br>Rosario, Santa Fe</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="space-y-6">
+          <h2 class="font-headline font-bold text-sm uppercase tracking-widest text-secondary-fixed-dim">Horarios</h2>
+
+          <div class="space-y-2">
+            <h3 class="text-white font-semibold text-sm">Sanatorio Americano</h3>
+            <dl class="text-on-primary-container">
+              <div class="flex justify-between gap-4 border-b border-white/10 py-1.5">
+                <dt>Miércoles</dt><dd class="text-white font-medium">17:00 a 20:00 hs</dd>
+              </div>
+              <div class="flex justify-between gap-4 border-b border-white/10 py-1.5">
+                <dt>Viernes</dt><dd class="text-white font-medium">12:00 a 17:00 hs</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="space-y-2">
+            <h3 class="text-white font-semibold text-sm">COT</h3>
+            <dl class="text-on-primary-container">
+              <div class="flex justify-between gap-4 border-b border-white/10 py-1.5">
+                <dt>Lunes</dt><dd class="text-white font-medium">08:00 a 12:00 hs</dd>
+              </div>
+              <div class="flex justify-between gap-4 border-b border-white/10 py-1.5">
+                <dt>Martes</dt><dd class="text-white font-medium">14:30 a 17:00 hs</dd>
+              </div>
+              <div class="flex justify-between gap-4 border-b border-white/10 py-1.5">
+                <dt>Jueves</dt><dd class="text-white font-medium">08:00 a 12:00 hs</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
+        <p class="text-white/70 text-sm text-center md:text-left">© <span id="footer-year">2026</span> Dr. Carlos A. Camburzano. Todos los derechos reservados.</p>
+
+        <div class="flex items-center gap-6 text-sm text-white/70">
+          <a class="hover:text-white transition-colors" href="privacidad.html">Privacidad</a>
+          <a class="hover:text-white transition-colors" href="terminos.html">Términos</a>
+
+          <span class="w-px h-4 bg-white/20" aria-hidden="true"></span>
+
+          <a href="https://www.instagram.com/dr.camburzano/" target="_blank" rel="noopener"
+             class="flex items-center justify-center p-2 -m-2 hover:text-white transition-colors"
+             aria-label="Instagram del Dr. Carlos A. Camburzano (se abre en una pestaña nueva)">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5c3.176 0 5.75-2.574 5.75-5.75v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 2h8.5A3.75 3.75 0 0120 7.75v8.5A3.75 3.75 0 0116.25 20h-8.5A3.75 3.75 0 014 16.25v-8.5A3.75 3.75 0 017.75 4zm9.5 1.5a.75.75 0 100 1.5.75.75 0 000-1.5zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("footer-year").textContent = new Date().getFullYear();
+
+      /* --- Scrollspy de la navegación --- */
+      const navLinks = document.querySelectorAll(".nav-link");
+      const sections = document.querySelectorAll("main section[id]");
+
+      function activateLink(id) {
+        navLinks.forEach((link) => {
+          const isActive = link.getAttribute("href") === `#${id}`;
+          link.classList.toggle("active", isActive);
+          if (isActive) {
+            link.setAttribute("aria-current", "true");
+          } else {
+            link.removeAttribute("aria-current");
+          }
+        });
+      }
+
+      if ("IntersectionObserver" in window) {
+        const spy = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) activateLink(entry.target.id);
+            });
+          },
+          { root: null, rootMargin: "-35% 0px -55% 0px", threshold: 0 }
+        );
+
+        sections.forEach((section) => spy.observe(section));
+      }
+      activateLink("home");
+
+      /* --- Menú móvil: foco atrapado, Escape para cerrar, foco devuelto --- */
+      const openBtn = document.getElementById("mobile-menu-button");
+      const closeBtn = document.getElementById("mobile-menu-close");
+      const overlay = document.getElementById("mobile-menu-overlay");
+      const focusables = () => overlay.querySelectorAll("a[href], button");
+
+      function openMenu() {
+        overlay.classList.remove("hidden");
+        document.body.classList.add("overflow-hidden");
+        openBtn.setAttribute("aria-expanded", "true");
+        closeBtn.focus();
+      }
+
+      function closeMenu({ restoreFocus = true } = {}) {
+        overlay.classList.add("hidden");
+        document.body.classList.remove("overflow-hidden");
+        openBtn.setAttribute("aria-expanded", "false");
+        if (restoreFocus) openBtn.focus();
+      }
+
+      openBtn.addEventListener("click", openMenu);
+      closeBtn.addEventListener("click", () => closeMenu());
+
+      overlay.querySelectorAll("a[href]").forEach((link) => {
+        link.addEventListener("click", () => closeMenu({ restoreFocus: false }));
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (overlay.classList.contains("hidden")) return;
+
+        if (event.key === "Escape") {
+          closeMenu();
+          return;
+        }
+
+        if (event.key !== "Tab") return;
+
+        const items = focusables();
+        if (!items.length) return;
+
+        const first = items[0];
+        const last = items[items.length - 1];
+
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      });
+
+      /* Vuelve al estado de escritorio si se agranda la ventana con el menú abierto. */
+      window.matchMedia("(min-width: 768px)").addEventListener("change", (event) => {
+        if (event.matches && !overlay.classList.contains("hidden")) closeMenu({ restoreFocus: false });
+      });
+
+      /* --- Reveal al hacer scroll (progresivo: sin JS o con reduced-motion, todo visible) --- */
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      if ("IntersectionObserver" in window && !reduceMotion) {
+        document.documentElement.classList.add("js-motion");
+
+        const revealer = new IntersectionObserver(
+          (entries, obs) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+              entry.target.classList.add("is-in");
+              obs.unobserve(entry.target);
+            });
+          },
+          { rootMargin: "0px 0px -10% 0px", threshold: 0.05 }
+        );
+
+        document.querySelectorAll("[data-reveal]").forEach((el) => revealer.observe(el));
+      }
+    });
+  </script>
+</body>
+</html>
